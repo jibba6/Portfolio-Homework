@@ -1,0 +1,97 @@
+/* General Styles */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    color: black;
+    background-color: greenyellow;
+}
+
+:root {
+    --light:greenyellow;
+    --dark: blue;
+}
+
+main {
+    max-width: 88%;
+    margin: 0 auto;
+    background-color: greenyellow;
+}
+.footer {
+    align-self: center;
+}
+/* Page Section Styling */
+section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: stretch;
+    margin-bottom: 30px;
+}
+
+section>h2 {
+    flex: 0 0 23%;
+    text-align: right;
+    padding-right: 20px;
+    border-right: 3px solid greenyellow;
+}
+
+section>div {
+    flex: 0 0 77%;
+    padding-left: 20px;
+}
+
+/* Flex Container Styling */
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* flex item styling */
+.flex-item {
+    border: 5px solid var(--dark);
+    background-color: black;
+    min-height: 150px;
+    max-height: 150px;
+    flex-basis: calc(50% - 1em);
+    margin: 0.5em;
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 0px;
+    background-size: 100%;
+    text-decoration: none;
+}
+
+.flex-item div {
+    padding: 8px 10px;
+    background-color: greenyellow;
+
+}
+
+.flex-item:first-child {
+    min-height: 300px;
+    flex-basis: 100%;
+}
+
+.project-One {
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrBxTzifiJgyQOHiPwAMnM4icb30B6SPpC-g&usqp=CAU");
+    max-height: 50%;
+    max-width: 50%;
+
+}
+
+.project-Two {
+    background-image: url("https://cdn.vox-cdn.com/thumbor/CNLDJd5-M-WtOsYh_yugQ-S-FJs=/715x248:1689x721/1400x933/filters:focal(972x299:1278x605):no_upscale()/cdn.vox-cdn.com/uploads/chorus_image/image/69305239/shrek4_disneyscreencaps.com_675.0.jpg");;
+}
+
+.project-Three {
+    background-image: url("https://variety.com/wp-content/uploads/2016/04/shrek.jpg");
+}
+.project-Four {
+    background-image: url("https://helios-i.mashable.com/imagery/articles/02AuSa1kAloSp8Zu3Ds0ERe/hero-image.fill.size_1200x1200.v1623374523.jpg") ;
+}
+.project-Five {
+    background-image: url("https://wegotthiscovered.com/wp-content/uploads/2022/02/Shrek.jpeg") ;
+}
